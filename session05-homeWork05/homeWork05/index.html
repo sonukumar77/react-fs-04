@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Parcel Sandbox</title>
+    <meta charset="UTF-8" />
+    <script
+      crossorigin
+      src="https://unpkg.com/react@18/umd/react.development.js"
+    ></script>
+    <script
+      crossorigin
+      src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"
+    ></script>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+  </head>
+
+  <body>
+    <div id="app"></div>
+    <script type="text/babel">
+      const Header = () => {
+        return (
+          <div style={{ height: "10%" }}>
+            <nav
+              style={{
+                display: "flex",
+                justifyContent: "space-around",
+                alignItems: "center",
+                backgroundColor: "red",
+                color: "white",
+                padding: "0 1rem"
+              }}
+            >
+              <div
+                style={{
+                  width: "30%"
+                }}
+              >
+                <h1>Koding made simple</h1>
+              </div>
+              <div
+                style={{
+                  width: "70%",
+                  display: "flex",
+                  justifyContent: "flex-end",
+                  alignItems: "center",
+                  gap: "1rem"
+                }}
+              >
+                <div>Bootstrap</div>
+                <div className="menu">Themes</div>
+                <div className="menu">Blog</div>
+              </div>
+            </nav>
+          </div>
+        );
+      };
+
+      const MainBody = () => {
+        return (
+          <div
+            style={{
+              height: "90%",
+              backgroundColor: "gray",
+              textAlign: "center",
+              padding: "1rem"
+            }}
+          >
+            <h1>Custom bootstrap navbar</h1>
+            <p>
+              Easy way to change custom navbar ,text and hover link color in
+              bootstrap...
+            </p>
+          </div>
+        );
+      };
+
+      const Container = () => {
+        return (
+          <div style={{ height: "100vh" }}>
+            <Header />
+            <MainBody />
+          </div>
+        );
+      };
+
+      ReactDOM.render(Container(), document.getElementById("app"));
+    </script>
+  </body>
+</html>
