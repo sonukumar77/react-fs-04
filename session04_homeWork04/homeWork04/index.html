@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Parcel Sandbox</title>
+    <meta charset="UTF-8" />
+    <script
+      crossorigin
+      src="https://unpkg.com/react@18/umd/react.development.js"
+    ></script>
+    <script
+      crossorigin
+      src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"
+    ></script>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div id="app"></div>
+    <script type="text/babel">
+      const cardStyle = {
+        width: "400px",
+        height: "400px",
+        boxShadow: "0 0 10px black",
+        margin: "2rem auto",
+        borderRadius: "5px"
+      };
+
+      const avatarStyle = {
+        height: "40%",
+        display: "flex",
+        justifyContent: "center",
+        alignItems: "center"
+      };
+
+      const avatarBox = {
+        width: "100px",
+        height: "100px",
+        borderRadius: "50%"
+      };
+      const nameStyle = {
+        height: "20%",
+        textAlign: "center"
+      };
+      const dataStyle = {
+        height: "20%",
+        display: "flex",
+        justifyContent: "space-around",
+        alignItems: "center",
+        textAlign: "center"
+      };
+      const buttonStyle = {
+        height: "20%",
+        display: "flex",
+        justifyContent: "space-around",
+        alignItems: "center"
+      };
+
+      const voiletButton = {
+        padding: "1rem",
+        border: "none",
+        outline: "none",
+        borderRadius: "5px",
+        fontSize: "1.2rem",
+        backgroundColor: "blue",
+        color: "white"
+      };
+
+      const pinkButton = {
+        padding: "1rem",
+        border: "none",
+        outline: "none",
+        borderRadius: "5px",
+        fontSize: "1.2rem",
+        backgroundColor: "red",
+        color: "white"
+      };
+
+      const Card = () => {
+        return (
+          <div style={cardStyle}>
+            <div style={avatarStyle}>
+              <img
+                style={avatarBox}
+                width="100%"
+                height="100%"
+                src="https://cdn.pixabay.com/photo/2023/03/31/05/52/avatar-7889246__340.jpg"
+                alt="avatar"
+              />
+            </div>
+            <div style={nameStyle}>
+              <h1>Alexandra Caulea</h1>
+              <p>I enjoy drinking a cup of coffee everyday</p>
+            </div>
+            <div style={dataStyle}>
+              <div>
+                <h2 style={{ color: "blue" }}>172</h2>
+                <p>POSTS</p>
+              </div>
+              <div>
+                <h2 style={{ color: "blue" }}>47</h2>
+                <p>FOLLOWERS</p>
+              </div>
+              <div>
+                <h2 style={{ color: "blue" }}>20</h2>
+                <p>FOLLOWING</p>
+              </div>
+            </div>
+            <div style={buttonStyle}>
+              <button style={voiletButton}>FOLLOW</button>
+              <button style={pinkButton}>MESSAGE</button>
+            </div>
+          </div>
+        );
+      };
+
+      const Container = () => {
+        return (
+          <div style={{ height: "100vh" }}>
+            <Card />
+          </div>
+        );
+      };
+
+      ReactDOM.render(Container(), document.getElementById("app"));
+    </script>
+  </body>
+</html>
