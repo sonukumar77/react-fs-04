@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Parcel Sandbox</title>
+    <meta charset="UTF-8" />
+    <script
+      crossorigin
+      src="https://unpkg.com/react@18/umd/react.development.js"
+    ></script>
+    <script
+      crossorigin
+      src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"
+    ></script>
+  </head>
+  <!-- Lorem ipsum dolor, sit amet consectetur adipisicing elit. Natus non dolor voluptates repellat eum dolores deserunt veritatis exercitationem error ipsam possimus iure nemo adipisci commodi iusto iste ut quaerat, nulla maiores, pariatur soluta? Nobis dicta in suscipit eius iure quidem vitae ullam nemo tenetur itaque quibusdam ut, quos illum voluptas. -->
+
+  <body>
+    <div id="app"></div>
+    <script>
+      const container = React.createElement(
+        "div",
+        {
+          style: {
+            width: "400px",
+            height: "400px",
+            boxShadow: "0 0 10px black",
+            margin: "1rem auto",
+            boxSizing: "border-box"
+          }
+        },
+        [
+          React.createElement(
+            "div",
+            {
+              className: "card-logo-container",
+              style: {
+                height: "40%",
+                border: "2px solid transparent"
+              }
+            },
+            React.createElement(
+              "div",
+              {
+                style: {
+                  width: "100px",
+                  height: "100px",
+                  borderRadius: "50px",
+                  margin: "2rem auto",
+                  border: "2px solid red",
+                  margin: "1rem auto"
+                }
+              },
+              React.createElement("img", {
+                src:
+                  "https://cdn.pixabay.com/photo/2023/03/31/05/52/avatar-7889246__340.jpg",
+                alt: "avatar",
+                height: "100%",
+                width: "100%",
+                style: {
+                  borderRadius: "50px"
+                }
+              })
+            )
+          ),
+          React.createElement(
+            "div",
+            {
+              className: "card-name-container",
+              style: {
+                height: "20%",
+                textAlign: "center"
+              }
+            },
+            [
+              React.createElement(
+                "h1",
+                {
+                  style: {
+                    margin: "0"
+                  }
+                },
+                "Alexendra Chawla"
+              ),
+              React.createElement(
+                "p",
+                {
+                  style: {
+                    margin: "0"
+                  }
+                },
+                "I enjoye drinking a cup of cofee everyday!"
+              )
+            ]
+          ),
+          React.createElement(
+            "div",
+            {
+              className: "card-follower-container",
+              style: {
+                height: "20%",
+                display: "flex",
+                justifyContent: "space-around",
+                alignItems: "center"
+              }
+            },
+            [
+              React.createElement("div", null, [
+                React.createElement(
+                  "h1",
+                  {
+                    style: { margin: "0", color: "blue", textAlign: "center" }
+                  },
+                  "172"
+                ),
+                React.createElement(
+                  "p",
+                  { style: { color: "gray", fontSize: "1.2rem" } },
+                  "POTS"
+                )
+              ]),
+              React.createElement("div", null, [
+                React.createElement(
+                  "h1",
+                  {
+                    style: { margin: "0", color: "blue", textAlign: "center" }
+                  },
+                  "47"
+                ),
+                React.createElement(
+                  "p",
+                  { style: { color: "gray", fontSize: "1.2rem" } },
+                  "FOLLOWERS"
+                )
+              ]),
+              React.createElement("div", null, [
+                React.createElement(
+                  "h1",
+                  {
+                    style: { margin: "0", color: "blue", textAlign: "center" }
+                  },
+                  "20"
+                ),
+                React.createElement(
+                  "p",
+                  { style: { color: "gray", fontSize: "1.2rem" } },
+                  "FOLLOWING"
+                )
+              ])
+            ]
+          ),
+          React.createElement(
+            "div",
+            {
+              className: "card-button-container",
+              style: {
+                height: "20%",
+                display: "flex",
+                justifyContent: "space-around",
+                alignItems: "center"
+              }
+            },
+            [
+              React.createElement(
+                "button",
+                {
+                  style: {
+                    padding: "1rem",
+                    backgroundColor: "blue",
+                    color: "white",
+                    border: "none",
+                    borderRadius: "5px"
+                  }
+                },
+                "FOLLOW"
+              ),
+              React.createElement(
+                "button",
+                {
+                  style: {
+                    padding: "1rem",
+                    backgroundColor: "pink",
+                    color: "white",
+                    border: "none",
+                    borderRadius: "5px"
+                  }
+                },
+                "MESSAGE"
+              )
+            ]
+          )
+        ]
+      );
+
+      ReactDOM.render(container, document.getElementById("app"));
+    </script>
+  </body>
+</html>
