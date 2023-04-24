@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Parcel Sandbox</title>
+    <meta charset="UTF-8" />
+    <script
+      crossorigin
+      src="https://unpkg.com/react@18/umd/react.development.js"
+    ></script>
+    <script
+      crossorigin
+      src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"
+    ></script>
+  </head>
+  <!-- Lorem ipsum dolor, sit amet consectetur adipisicing elit. Natus non dolor voluptates repellat eum dolores deserunt veritatis exercitationem error ipsam possimus iure nemo adipisci commodi iusto iste ut quaerat, nulla maiores, pariatur soluta? Nobis dicta in suscipit eius iure quidem vitae ullam nemo tenetur itaque quibusdam ut, quos illum voluptas. -->
+
+  <body>
+    <div id="app"></div>
+    <script>
+      const container = React.createElement("div", null, [
+        React.createElement("div", { className: "name-section" }, [
+          React.createElement("h1", {}, "SONU KUMAR"),
+          React.createElement(
+            "p",
+            null,
+            "Software Developer, Educator at Geekster"
+          ),
+          React.createElement(
+            "a",
+            { href: "https://github.com/sonukumar77" },
+            "Github"
+          ),
+          React.createElement(
+            "a",
+            { href: "https://www.linkedin.com/in/sonu-kumar-1110b81a0" },
+            "Linkedin"
+          ),
+          React.createElement("hr", null)
+        ]),
+        React.createElement("div", { className: "experience-section" }, [
+          React.createElement("h1", {}, "Exprience"),
+          React.createElement("h4", null, "Software Developer at Amazon"),
+          React.createElement(
+            "p",
+            null,
+            "I work with amazon in transportation team, some more description Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus, ullam! Maxime officiis consequuntur libero eaque reprehenderit quisquam nam ab vitae totam id commodi laborum enim, sint ea odit quasi soluta!"
+          ),
+          React.createElement(
+            "p",
+            null,
+            "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Provident iusto ut praesentium modi. Incidunt atque voluptatem, dignissimos officiis reprehenderit est!"
+          ),
+          React.createElement("hr", null),
+          React.createElement("h4", null, "Educator at Geekster"),
+          React.createElement(
+            "p",
+            null,
+            "Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere ipsa ab qui autem nesciunt vel consequatur non totam, temporibus excepturi voluptatem iure impedit ut repellendus earum necessitatibus nemo eligendi, animi debitis reiciendis suscipit. Unde iure obcaecati dolores, numquam quibusdam rerum facilis a quam quos ad ullam consectetur reiciendis deserunt similique."
+          ),
+          React.createElement(
+            "p",
+            null,
+            "Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere ipsa ab qui autem nesciunt vel consequatur non totam, temporibus excepturi voluptatem iure impedit ut repellendus earum necessitatibus nemo eligendi, animi debitis reiciendis suscipit. Unde iure obcaecati dolores, numquam quibusdam rerum facilis a quam quos ad ullam consectetur reiciendis deserunt similique."
+          ),
+          React.createElement("hr", null)
+        ]),
+        React.createElement("div", { className: "skill-section" }, [
+          React.createElement("h1", null, "Skills"),
+          React.createElement("ul", null, [
+            React.createElement("li", null, "Java"),
+            React.createElement("li", null, "Javascript"),
+            React.createElement("li", null, "Testing"),
+            React.createElement("li", null, "API Designing"),
+            React.createElement("li", null, "System Design")
+          ]),
+          React.createElement("hr", null)
+        ]),
+        React.createElement("div", { className: "hobbies-section" }, [
+          React.createElement("h1", null, "Hobbies"),
+          React.createElement("ol", null, [
+            React.createElement("li", null, "Table Tennis"),
+            React.createElement("li", null, "Reading Books"),
+            React.createElement("li", null, "Biography"),
+            React.createElement("li", null, "Teaching")
+          ])
+        ])
+      ]);
+
+      ReactDOM.render(container, document.getElementById("app"));
+    </script>
+  </body>
+</html>
