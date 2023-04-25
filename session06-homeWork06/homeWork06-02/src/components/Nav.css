@@ -1,0 +1,32 @@
+.nav-container {
+  height: 10%;
+  display: flex;
+}
+.logo {
+  width: 20%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.menu {
+  width: 80%;
+  display: flex;
+  justify-content: space-around;
+  /* flex-direction: column; */
+  align-items: center;
+}
+
+.menu-left,
+.menu-right {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  gap: 1rem;
+}
+
+.active {
+  background-color: green;
+  padding: 0.5rem;
+  color: white;
+}
