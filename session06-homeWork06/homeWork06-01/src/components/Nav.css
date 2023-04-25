@@ -1,0 +1,24 @@
+.nav-container {
+  height: 10%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: rgb(201, 196, 196);
+}
+.nav-right,
+.nav-middle {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  gap: 1rem;
+  font-size: 1.3rem;
+  font-weight: bold;
+}
+
+.nav-middle :nth-child(1) {
+  color: rgb(43, 43, 245);
+}
+.nav-right > div,
+.nav-middle > div {
+  cursor: pointer;
+}
